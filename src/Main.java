@@ -27,7 +27,8 @@ public class Main {
 		
 		//Calcul d'une moyenne par un attribut de la classe Moyenne et affichage
 		Moyenne moyenne = new Moyenne(_data);
-		System.out.println("Moyenne : " + moyenne.getMean());
+		System.out.printf("Moyenne : %.1f", moyenne.getMean());
+		System.out.println();
 		
 		//Calcul d'une distance pour toutes les valeurs par un attribut de la classe Distance 
 		//puis affichage
@@ -41,11 +42,13 @@ public class Main {
 		//Calcul d'une variance par un attribut de la classe Variance 
 		//et affichage
 		Variance variance = new Variance(distance);
-		System.out.println("Variance : " + variance.getVariance());
-	
+		System.out.printf("Variance : %.4f", variance.getVariance());
+		System.out.println();
+		
 		//Calcul de l'écart-type par un attribut de la classe EcartType et affichage
 		EcartType ecartType = new EcartType(variance);
-		System.out.println("Écart-type : " + ecartType.getEcartType());
+		System.out.printf("Écart-type : %.2f", ecartType.getEcartType());
+		System.out.println();
 		
 	}
 	
